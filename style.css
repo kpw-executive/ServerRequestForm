@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* cssのリセット（絶対に書き換えない） */
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: normal;
+}
+
+/* imgタグのリセット（絶対に書き換えない） */
+img {
+  vertical-align: bottom;
+}
+
+/* フォームボタンのリセット(絶対に書き換えない) */
+button,
+input[type="button"] {
+  appearance: none;
+  padding: 0;
+  font-size: 100%;
+  line-height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+
+body {
+  color: #2A7C15;
+  background-color: #E1FAF0;
+  background-repeat: repeat;
+  background-position: center top
+}
+
+
+div.inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: #165F2C;
+  padding: 10px 10px 10px 10px;
+  border: 5px solid #144A15;
+  display: flex;
+  justify-content: center;
+
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+
+
+section {
+  margin: 0px 10px 80px 10px;
+  padding: 30px 0px 0px 0px;
+}
+
+
+section h2 {
+  background-position: left center;
+  color: #FFFFFF;
+  background-color: #267E3B;
+  font-size: 160%;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 10px 10px 30px;
+}
+
+/* お問い合わせページここから */
+
+section p.msgContact {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section.contact p.msgContact {
+  line-height: 1.8;
+  margin: 0px 0px 30px 0px;
+}
+
+section.contact form h3 label {
+  color: #13711D;
+  font-size: 120%;
+  font-weight: bold;
+  border-top: 1px solid #196028;
+  border-bottom: 1px solid #196028;
+  padding: 12px 5px 12px 5px;
+  margin: 0px 0px 15px 0px;
+  background-color: rgba(118, 216, 129, 0.40);
+}
+
+section.contact form h3 nav {
+  color: #13711D;
+  font-size: 120%;
+  font-weight: bold;
+  border-top: 1px solid #196028;
+  border-bottom: 1px solid #196028;
+  padding: 12px 5px 12px 5px;
+  margin: 0px 0px 15px 0px;
+  background-color: rgba(118, 216, 129, 0.40);
+}
+
+section.contact form h3 article {
+  color: #13711D;
+  font-size: 120%;
+  font-weight: bold;
+  border-top: 1px solid #196028;
+  border-bottom: 1px solid #196028;
+  padding: 12px 5px 12px 5px;
+  margin: 0px 0px 15px 0px;
+  background-color: rgba(118, 216, 129, 0.40);
+}
+
+section.contact form p {
+  line-height: 1.4;
+  margin: 0px 0px 30px 0px;
+}
+
+section.contact form input[type="text"] {
+  width: 240px;
+  padding: 5px 5px 5px 5px;
+}
+
+section.contact form input[type="email"] {
+  width: 240px;
+  padding: 5px 5px 5px 5px;
+}
+
+section.contact form input[type="date"] {
+  width: 240px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+section.contact form input[type="datetime-local"] {
+  width: 240px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+section.contact form textarea {
+  max-width: 600px;
+  width: 100%;
+  height: 50px;
+  padding: 5px 5px 5px 5px;
+}
+
+section.contact form div.btnSubmit {
+  border-top: 4px solid #086E24;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+section.contact form div.btnSubmit input[type="button"] {
+  padding: 8px 20px 8px 20px;
+  border: 2px solid #0A621F;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+footer {
+  background-color: #3EB477;
+  padding: 20px 10px 20px 10px;
+}
+
+footer p {
+  font-size: 70%;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}

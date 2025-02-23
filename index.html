@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>単発鯖貸し出し申請書テンプレ作成サイト</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <p class="logo"><img src="media.png" width="128" height="127" alt="かめぱわ～"></p>
+      <h1 class="center">単発鯖貸し出し申請書提出テンプレ</h1>
+   </header>
+
+   <div class="inner">
+
+      <section class="contact">
+         <h2>記入欄</h2>
+
+         <p class="msgContact">ここに記入して送信すると全てテキストになってコピペができるようになります。</p>
+
+         <form action="#">
+            <h3><label for="msg">申請者名</label></h3>
+            <p><input type="text" name="onamae" id="onamae"></p>
+
+            <h3><label for="msg">企画名</label></h3>
+            <p><input type="text" name="planning" id="planning"></p>
+
+            <h3><label for="msg">企画発足フォーラムへのリンク</label></h3>
+            <p><input type="text" name="forum" id="forum"></p>
+
+            <h3><label for="msg">申請期間</label></h3>
+            <input type="datetime-local" id="time" name="time" value="2025-01-1T00:00"
+               min="2025-01-1T00:00" max="2030-12-31T00:00" />
+
+            <h3><label for="msg">サーバーバージョン</label></h3>
+            <p><input type="text" name="version" id="version"></p>
+
+            <h3>
+               <nav>ワールドタイプ</nav>
+            </h3>
+            <p>
+               <input type="radio" name="opp" value="通常" class="opp" id="normal">
+               通常
+               <input type="radio" name="opp" value="フラット" class="opp" id="flat">
+               フラット
+               <input type="radio" name="opp" value="アンプリファイド" class="opp" id="amplified">
+               アンプリファイド
+               <input type="radio" name="opp" value="ボイド" class="opp" id="void">
+               ボイド
+            </p>
+            <p><input type="radio" name="opp" value="配布ワールド" class="opp" id="etc">
+               配布ワールドの場合（リンクなど）</p>
+            <p><textarea name="other" id="other"></textarea></p>
+
+            <h3>
+               <nav>OP</nav>
+            </h3>
+            <p><input type="checkbox" name="opp" value="op" class="opp" id="op">
+               OPユーザー</p>
+            <p><textarea name="opuser" id="opuser"></textarea></p>
+
+            <h3>
+               <article>ホワイトリストを使用するか</article>
+            </h3>
+            <p><input type="checkbox" name="opp" value="op" class="opp" id="whitelist">
+               ホワイトリスト</p>
+            <p><textarea name="whitelistuser" id="whitelistuser"></textarea></p>
+
+            <h3>
+               <nav>パネルを使用するか</nav>
+            </h3>
+            <p><input type="checkbox" name="opp" value="op" class="opp" id="panel">
+               パネルユーザー</p>
+            <p><textarea name="paneluser" id="paneluser"></textarea></p>
+
+            <h3><label for="msg">使用するプラグイン</label></h3>
+            <p><textarea name="plugin" id="plugin"></textarea></p>
+
+            <h3><label for="msg">コメントや質問:
+                  [その他の情報や質問、依頼者からのリクエスト]</label></h3>
+            <p><textarea name="comment" id="comment"></textarea></p>
+
+            <div class="btnSubmit">
+               <p><input type="button" onclick="generateTemplate()" value="確認する" name="btn"></p>
+
+            </div>
+            <textarea id="output" class="output" readonly></textarea>
+
+            <div class="btnSubmit">
+               <p><input type="button" onclick="copyToClipboard()" value="コピーする" name="btn"></p>
+
+            </div>
+         </form>
+
+      </section>
+
+   </div><!-- end.inner -->
+
+
+
+   <p class="pagetop"><a href="#top">TOP</a></p>
+
+   <footer>
+      <p>Copyright design - All Rights Reserved.</p>
+   </footer>
+
+</body>
+
+</html>
