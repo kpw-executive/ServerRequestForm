@@ -15,7 +15,7 @@ function generateTemplate() {
     const isWhitelist = document.getElementById('whitelist').checked;
     const whitelist = document.getElementById('whitelistuser').value;
     const isPanel = document.getElementById('panel').checked;
-    const panel = document.getElementById('paneluser').checked;
+    const panel = document.getElementById('paneluser').value;
     const plugin = document.getElementById('plugin').value;
     const comment = document.getElementById('comment').value;
 
